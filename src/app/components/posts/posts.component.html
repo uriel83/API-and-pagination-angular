@@ -1,8 +1,10 @@
 
-
+<a class=" btn btn-primary" (click)="printPost()">page</a>
 <div class="row text-center" style="margin: 30px;">
-    <div class="col-md-10 "  *ngFor ='let post of posts'>
+    <div class="col-md-10 "  *ngFor ='let post of postToPrint'>
            <app-print-post [post]="post"></app-print-post>
   </div> 
 </div>
+<a *ngIf="backe" class=" btn btn-primary " style="margin: 20px;" (click)="backePage()">backe page</a>
+<a *ngIf="next" class=" btn btn-primary" (click)="nextPage()">next page</a>
 
