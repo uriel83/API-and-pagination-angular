@@ -12,6 +12,7 @@ import { environment } from "../environments/environment";
 import { HomeComponent } from './components/home/home.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PrintPostComponent } from './components/print-post/print-post.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // import { } from 'bootstrap-select-country';
 
@@ -32,7 +33,8 @@ import { PrintPostComponent } from './components/print-post/print-post.component
     FormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-     AngularFireStorageModule
+     AngularFireStorageModule,
+     FontAwesomeModule
 
 
   ],
