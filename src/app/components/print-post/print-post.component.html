@@ -1,15 +1,14 @@
-    <div class="card w-80" >
+<div class="card w-80" >
         <div class="card-header">
-            <h4>user {{post.userId}}      post {{post.id}}</h4>
-             
-        </div>
+            <h4>user {{post.userId}}      post {{post.id}}</h4> 
+        </div>   
         <div class="card-body">
-            <h5 class="card-title" style="color: rgb(72, 151, 197);">{{post.title}}</h5>
-          
-          <a *ngIf=!moreInfo class="btn btn-primary" (click)= userClick()>more info</a>
-          <p *ngIf=moreInfo class="card-text">{{post.body}}</p>
-          <a *ngIf=moreInfo class="btn btn-primary" (click)= userClick()>close</a>
-          
-        </div>
+           <h5 class="card-title" style="color: rgb(72, 151, 197);">{{post.title}}</h5>
+            <i class="fab fa-angellist"></i> 
+            <a *ngIf=!moreInfo class="btn btn-primary" (click)= userClick()>more info</a>
+            <p *ngIf=moreInfo class="card-text">{{post.body}}</p>
+            <a *ngIf=moreInfo class="btn btn-primary" (click)= userClick()>close</a>
       </div>
-      <br/>
+     
+</div>
+ <br/>
